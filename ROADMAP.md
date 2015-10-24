@@ -17,7 +17,7 @@ Brain dump of all the features/ideas for future improvements. If you have any mo
 
 --
 
-What to expect in the coming release. Crossed off features have been implemented. See the [change log]().
+What to expect in the coming release. Crossed off features have been implemented. See the [change log](https://github.com/Isuru-Nanayakkara/Broadband-Usage-Meter-OSX/blob/master/CHANGELOG.md).
 
 ### 1.0.0
 - Show peak usage.
