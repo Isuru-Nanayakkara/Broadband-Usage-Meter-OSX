@@ -1,0 +1,19 @@
+PODS:
+  - LetsMove (1.19)
+
+DEPENDENCIES:
+  - LetsMove (from `https://github.com/potionfactory/LetsMove.git`)
+
+EXTERNAL SOURCES:
+  LetsMove:
+    :git: https://github.com/potionfactory/LetsMove.git
+
+CHECKOUT OPTIONS:
+  LetsMove:
+    :commit: bbf57d67cb042031ae2a86d8fbef40f26f62f3a0
+    :git: https://github.com/potionfactory/LetsMove.git
+
+SPEC CHECKSUMS:
+  LetsMove: ddede6e726b7aeb125f3bce42943da4ee3ee2432
+
+COCOAPODS: 0.39.0
