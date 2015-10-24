@@ -10,6 +10,13 @@
 		D311E3C41BDB9347001F1D7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D311E3C31BDB9347001F1D7E /* AppDelegate.swift */; };
 		D311E3C61BDB9347001F1D7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D311E3C51BDB9347001F1D7E /* Assets.xcassets */; };
 		D311E3C91BDB9347001F1D7E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D311E3C71BDB9347001F1D7E /* MainMenu.xib */; };
+		D3EFE1081BDC18220021B9A8 /* MeterMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EFE1011BDC18220021B9A8 /* MeterMenuController.swift */; };
+		D3EFE1091BDC18220021B9A8 /* MeterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EFE1021BDC18220021B9A8 /* MeterView.swift */; };
+		D3EFE10A1BDC18220021B9A8 /* NSAttributedString+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EFE1031BDC18220021B9A8 /* NSAttributedString+Extensions.swift */; };
+		D3EFE10B1BDC18220021B9A8 /* PreferencesWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EFE1041BDC18220021B9A8 /* PreferencesWindow.swift */; };
+		D3EFE10C1BDC18220021B9A8 /* PreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3EFE1051BDC18220021B9A8 /* PreferencesWindow.xib */; };
+		D3EFE10D1BDC18220021B9A8 /* SLTAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EFE1061BDC18220021B9A8 /* SLTAPI.swift */; };
+		D3EFE10E1BDC18220021B9A8 /* Usage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EFE1071BDC18220021B9A8 /* Usage.swift */; };
 		FEA82A21C0D832A8C9054BF3 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E3BD295B2325FA2D11FB993 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -22,6 +29,13 @@
 		D311E3C51BDB9347001F1D7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D311E3C81BDB9347001F1D7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		D311E3CA1BDB9347001F1D7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3EFE1011BDC18220021B9A8 /* MeterMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeterMenuController.swift; sourceTree = "<group>"; };
+		D3EFE1021BDC18220021B9A8 /* MeterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeterView.swift; sourceTree = "<group>"; };
+		D3EFE1031BDC18220021B9A8 /* NSAttributedString+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Extensions.swift"; sourceTree = "<group>"; };
+		D3EFE1041BDC18220021B9A8 /* PreferencesWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesWindow.swift; sourceTree = "<group>"; };
+		D3EFE1051BDC18220021B9A8 /* PreferencesWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreferencesWindow.xib; sourceTree = "<group>"; };
+		D3EFE1061BDC18220021B9A8 /* SLTAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SLTAPI.swift; sourceTree = "<group>"; };
+		D3EFE1071BDC18220021B9A8 /* Usage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Usage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +81,15 @@
 			isa = PBXGroup;
 			children = (
 				D311E3C31BDB9347001F1D7E /* AppDelegate.swift */,
-				D311E3C51BDB9347001F1D7E /* Assets.xcassets */,
+				D3EFE1011BDC18220021B9A8 /* MeterMenuController.swift */,
+				D3EFE1021BDC18220021B9A8 /* MeterView.swift */,
+				D3EFE1031BDC18220021B9A8 /* NSAttributedString+Extensions.swift */,
+				D3EFE1041BDC18220021B9A8 /* PreferencesWindow.swift */,
 				D311E3C71BDB9347001F1D7E /* MainMenu.xib */,
+				D3EFE1051BDC18220021B9A8 /* PreferencesWindow.xib */,
+				D3EFE1061BDC18220021B9A8 /* SLTAPI.swift */,
+				D3EFE1071BDC18220021B9A8 /* Usage.swift */,
+				D311E3C51BDB9347001F1D7E /* Assets.xcassets */,
 				D311E3CA1BDB9347001F1D7E /* Info.plist */,
 			);
 			path = "Broadband Usage Meter";
@@ -143,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D311E3C61BDB9347001F1D7E /* Assets.xcassets in Resources */,
+				D3EFE10C1BDC18220021B9A8 /* PreferencesWindow.xib in Resources */,
 				D311E3C91BDB9347001F1D7E /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -202,7 +224,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3EFE1081BDC18220021B9A8 /* MeterMenuController.swift in Sources */,
+				D3EFE10B1BDC18220021B9A8 /* PreferencesWindow.swift in Sources */,
+				D3EFE10A1BDC18220021B9A8 /* NSAttributedString+Extensions.swift in Sources */,
 				D311E3C41BDB9347001F1D7E /* AppDelegate.swift in Sources */,
+				D3EFE10E1BDC18220021B9A8 /* Usage.swift in Sources */,
+				D3EFE10D1BDC18220021B9A8 /* SLTAPI.swift in Sources */,
+				D3EFE1091BDC18220021B9A8 /* MeterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
