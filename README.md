@@ -17,10 +17,10 @@ Little menu bar app that allows you to check your broadband data usage directly 
 
 ## Support
 
-Check out the [roadmap] for this project to see the upcoming features. If you have any more ideas/suggestions, please open an issue or let me know via [twitter]() or [email]().
+Check out the [roadmap] for this project to see the upcoming features. If you have any more ideas/suggestions, please open an issue or let me know via [twitter](https://twitter.com/IJNanayakkara) or [email](mailto:isuru.nan@gmail.com).
 
 ## Legal
 
 Broadband Usage Meter is not affiliated with any of the service providers.
 
-This application is released under MIT license. See [LICENSE] for more information.
+This application is released under MIT license. See [LICENSE](https://github.com/Isuru-Nanayakkara/Broadband-Usage-Meter-OSX/blob/master/LICENSE) for more information.
