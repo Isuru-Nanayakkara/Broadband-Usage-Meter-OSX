@@ -1,0 +1,4 @@
+platform :osx, '10.9'
+use_frameworks!
+
+pod 'LetsMove', :git => 'https://github.com/potionfactory/LetsMove.git'

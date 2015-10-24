@@ -19,6 +19,7 @@ DerivedData
 *.hmap
 *.ipa
 *.xcuserstate
+*.xcscmblueprint
 
 # CocoaPods
 #
@@ -40,3 +41,11 @@ Carthage/Build
 
 # General
 .DS_Store
+
+# fastlane
+#
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the 
+# screenshots whenever they are needed.
+
+fastlane/report.xml
+fastlane/screenshots
