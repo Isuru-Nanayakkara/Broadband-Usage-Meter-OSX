@@ -16,13 +16,14 @@ struct Usage: CustomStringConvertible {
     
     private let gigabyteInBytes: Double = 1073741824
     
-    init(jsonData: NSData) {
+    init?(jsonData: NSData) {
         var jsonDict = [String: AnyObject]()
         
         do {
             jsonDict = try NSJSONSerialization.JSONObjectWithData(jsonData, options: []) as! [String: AnyObject]
         } catch {
             print("Error occurred parsing data: \(error)")
+            return nil
         }
         print(jsonDict)
         

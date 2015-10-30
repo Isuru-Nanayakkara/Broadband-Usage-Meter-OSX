@@ -19,7 +19,7 @@ class SLTAPI {
         let request = NSMutableURLRequest(URL: url)
         request.HTTPMethod = "POST"
         request.encodeParameters(params)
-        session.dataTaskWithRequest(request, completionHandler: { (data, response, error) -> Void in
+        session.dataTaskWithRequest(request, completionHandler: { data, response, error in
             if let httpResponse = response as? NSHTTPURLResponse {
                 if httpResponse.statusCode != 200 {
                     print("Something's fucky! - \(httpResponse)")
@@ -39,12 +39,22 @@ class SLTAPI {
         }).resume()
     }
     
-    func fetchUsage(completion: (usage: Usage, error: NSError?) -> ()) {
+    func fetchUsage(completion: (usage: Usage?, error: NSError?) -> ()) {
         let url = NSURL(string: baseURL + "application/GetProfile")!
         let request = NSURLRequest(URL: url)
-        session.dataTaskWithRequest(request, completionHandler: { (data, response, error) -> Void in
-            let usage = Usage(jsonData: data!)
-            completion(usage: usage, error: nil)
+        session.dataTaskWithRequest(request, completionHandler: { data, response, error in
+            if let error = error {
+                completion(usage: nil, error: error)
+            } else {
+                if let usage = Usage(jsonData: data!) {
+                    completion(usage: usage, error: nil)
+                } else {
+                    let errorDescription = "Error Fetching Data"
+                    let recoverySuggestion = ""
+                    let fetchDataError = NSError(domain: "SLT-Usage-Error", code: 1, userInfo: [NSLocalizedDescriptionKey: errorDescription, NSLocalizedRecoverySuggestionErrorKey: recoverySuggestion])
+                    completion(usage: nil, error: fetchDataError)
+                }
+            }
         }).resume()
     }
 }

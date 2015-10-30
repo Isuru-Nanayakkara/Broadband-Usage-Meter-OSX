@@ -62,12 +62,14 @@ class MeterMenuController: NSObject {
     
     func updateUsage() {
         api.fetchUsage { usage, error in
-            print(usage.description)
-            print("Remaning data: \(usage.remainingTotalDataPercentage)%")
-            print("Remaining Peak data: \(usage.remainingPeakDataPercentage)%")
-            self.meterView.update(usage)
-            
-            self.registerForBackgroundUpdating()
+            if let usage = usage {
+                print(usage.description)
+                print("Remaning data: \(usage.remainingTotalDataPercentage)%")
+                print("Remaining Peak data: \(usage.remainingPeakDataPercentage)%")
+                self.meterView.update(usage)
+                
+                self.registerForBackgroundUpdating()
+            }
         }
     }
     
