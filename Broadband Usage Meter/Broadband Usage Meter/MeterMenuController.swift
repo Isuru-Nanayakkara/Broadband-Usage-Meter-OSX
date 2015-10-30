@@ -43,10 +43,17 @@ class MeterMenuController: NSObject {
             if userID.isEmpty || password.isEmpty {
                 preferencesWindow.showWindow(nil)
             } else {
-                api.login(userID: userID, password: password) {
-                    print("Successfully logged in!")
-                    self.updateUsage()
-                }
+                api.login(userID: userID, password: password, completion: { error in
+                    if let error = error {
+                        print("Error occurred when loggin in: \(error.localizedDescription)")
+                        dispatch_async(dispatch_get_main_queue(), {
+                            NSAlert(error: error).runModal()
+                        })
+                    } else {
+                        print("Successfully logged in!")
+                        self.updateUsage()
+                    }
+                })
             }
         } else {
             preferencesWindow.showWindow(nil)
@@ -54,7 +61,7 @@ class MeterMenuController: NSObject {
     }
     
     func updateUsage() {
-        api.fetchUsage { usage in
+        api.fetchUsage { usage, error in
             print(usage.description)
             print("Remaning data: \(usage.remainingTotalDataPercentage)%")
             print("Remaining Peak data: \(usage.remainingPeakDataPercentage)%")

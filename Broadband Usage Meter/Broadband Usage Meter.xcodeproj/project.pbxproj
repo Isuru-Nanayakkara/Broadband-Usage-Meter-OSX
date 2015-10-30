@@ -85,10 +85,10 @@
 				D3EFE1021BDC18220021B9A8 /* MeterView.swift */,
 				D3EFE1031BDC18220021B9A8 /* NSAttributedString+Extensions.swift */,
 				D3EFE1041BDC18220021B9A8 /* PreferencesWindow.swift */,
-				D311E3C71BDB9347001F1D7E /* MainMenu.xib */,
-				D3EFE1051BDC18220021B9A8 /* PreferencesWindow.xib */,
 				D3EFE1061BDC18220021B9A8 /* SLTAPI.swift */,
 				D3EFE1071BDC18220021B9A8 /* Usage.swift */,
+				D311E3C71BDB9347001F1D7E /* MainMenu.xib */,
+				D3EFE1051BDC18220021B9A8 /* PreferencesWindow.xib */,
 				D311E3C51BDB9347001F1D7E /* Assets.xcassets */,
 				D311E3CA1BDB9347001F1D7E /* Info.plist */,
 			);
