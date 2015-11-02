@@ -17,11 +17,11 @@ class MeterView: NSView {
     
     func update(usage: Usage) {
         dispatch_async(dispatch_get_main_queue()) {
-            self.peakLevelIndicator.doubleValue = usage.remainingPeakData
+            self.peakLevelIndicator.doubleValue = usage.remainingPeakDataPercentage
             self.peakLevelIndicator.toolTip = "\(usage.remainingPeakData) GB Left"
             self.peakPercentageLabel.stringValue = "\(Int(usage.remainingPeakDataPercentage))%"
             
-            self.totalLevelIndicator.doubleValue = usage.remainingTotalData
+            self.totalLevelIndicator.doubleValue = usage.remainingTotalDataPercentage
             self.totalLevelIndicator.toolTip = "\(usage.remainingTotalData) GB Left"
             self.totalPercentageLabel.stringValue = "\(Int(usage.remainingTotalDataPercentage))%"
         }
