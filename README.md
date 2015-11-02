@@ -4,12 +4,18 @@ Little menu bar app that allows you to check your broadband data usage directly 
 
 ## Installation
 
-1. Download the latest [release]().
-2. Double-click on it. The following window will appear.
-3. Click the **Move to Applications Folder** button.
+- Download the latest [release]().
+- Double-click on it. Following window will appear.
 
+![Move to applications folder](https://raw.githubusercontent.com/Isuru-Nanayakkara/Broadband-Usage-Meter-OSX/master/screenshots/move_to_applications.png)
+
+- Click the **Move to Applications Folder** button.
 
 ## Usage
+
+- Enter the Username and the Password you use to login to the [SLT portal](https://www.internetvas.slt.lk/SLTVasPortal-war/login/login.jsp).
+
+![Login credentials to SLT portal](https://raw.githubusercontent.com/Isuru-Nanayakkara/Broadband-Usage-Meter-OSX/master/screenshots/preferences_window.png)
 
 ## Requirements
 
