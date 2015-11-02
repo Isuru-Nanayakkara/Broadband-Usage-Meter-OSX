@@ -12,9 +12,11 @@ class MeterMenuController: NSObject {
     
     @IBOutlet weak var menu: NSMenu!
     @IBOutlet weak var meterView: MeterView!
+    @IBOutlet weak var startAtLoginMenuItem: NSMenuItem!
     
     let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(NSSquareStatusItemLength)
     let api = SLTAPI()
+    let launchServicesHelper = LaunchServicesHelper()
     
     var meterMenuItem: NSMenuItem!
     var preferencesWindow: PreferencesWindow!
@@ -28,6 +30,8 @@ class MeterMenuController: NSObject {
         
         preferencesWindow = PreferencesWindow()
         preferencesWindow.delegate = self
+        
+        startAtLoginMenuItem.state = launchServicesHelper.applicationIsInStartUpItems ? NSOnState : NSOffState
         
         login()
     }
@@ -86,6 +90,12 @@ class MeterMenuController: NSObject {
     @IBAction func preferencesItemClicked(sender: NSMenuItem) {
         preferencesWindow.showWindow(nil)
     }
+    
+    @IBAction func toggleStartAtLogin(sender: NSMenuItem) {
+        launchServicesHelper.toggleLaunchAtStartup()
+        startAtLoginMenuItem.state = launchServicesHelper.applicationIsInStartUpItems ? NSOnState : NSOffState
+    }
+    
 }
 
 // MARK: - PreferencesDelegate

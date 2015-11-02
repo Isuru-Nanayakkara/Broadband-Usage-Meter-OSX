@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9052" systemVersion="15A284" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9052" systemVersion="15B42" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9052"/>
@@ -18,6 +18,7 @@
             <connections>
                 <outlet property="menu" destination="Tg2-RZ-ZPu" id="rlk-0z-jAs"/>
                 <outlet property="meterView" destination="BAH-yk-OfJ" id="bAA-Qg-Xic"/>
+                <outlet property="startAtLoginMenuItem" destination="d0o-1P-pR6" id="d5l-5H-bcK"/>
             </connections>
         </customObject>
         <menu id="Tg2-RZ-ZPu">
@@ -30,6 +31,12 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="preferencesItemClicked:" target="dh1-3G-ZJB" id="OC7-NJ-9H2"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Start at Login" id="d0o-1P-pR6">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="toggleStartAtLogin:" target="dh1-3G-ZJB" id="ipi-OA-T5P"/>
                     </connections>
                 </menuItem>
                 <menuItem title="Quit" id="jum-Me-Upy">
