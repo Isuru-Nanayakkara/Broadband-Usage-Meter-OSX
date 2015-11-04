@@ -1,10 +1,18 @@
 PODS:
+  - Crashlytics-OSX (3.3.4)
+  - Fabric-OSX (1.5.5):
+    - Fabric-OSX/Base (= 1.5.5)
+  - Fabric-OSX/Base (1.5.5)
   - LetsMove (1.19)
 
 DEPENDENCIES:
+  - Crashlytics-OSX
+  - Fabric-OSX
   - LetsMove
 
 SPEC CHECKSUMS:
+  Crashlytics-OSX: bd34ff8cea31a8a707583f4de2f9aabdd98d4034
+  Fabric-OSX: 4e9c65e093eaaa536c89e801ce20065c14d65f1b
   LetsMove: ddede6e726b7aeb125f3bce42943da4ee3ee2432
 
 COCOAPODS: 0.39.0

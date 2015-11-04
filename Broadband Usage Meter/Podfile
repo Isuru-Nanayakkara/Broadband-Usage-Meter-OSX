@@ -2,3 +2,5 @@ platform :osx, '10.9'
 use_frameworks!
 
 pod 'LetsMove'
+pod 'Fabric-OSX'
+pod 'Crashlytics-OSX'
