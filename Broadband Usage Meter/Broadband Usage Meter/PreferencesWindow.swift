@@ -51,12 +51,13 @@ class PreferencesWindow: NSWindowController, NSWindowDelegate {
 //        registerLabel.alignment = .Center
     }
     
-    func windowWillClose(notification: NSNotification) {
+    @IBAction func loginButtonClicked(sender: NSButton) {
         let userDefaults = NSUserDefaults.standardUserDefaults()
         userDefaults.setValue(userIDTextField.stringValue, forKey: "userID")
         userDefaults.setValue(passwordTextField.stringValue, forKey: "password")
         
         delegate?.preferencesDidUpdate()
+        close()
     }
     
 }

@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '0C30453976A7664ADF88F128'
+               BlueprintIdentifier = '249A762658162DD5F2D966B3'
                BlueprintName = 'LetsMove'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'LetsMove.framework'>
