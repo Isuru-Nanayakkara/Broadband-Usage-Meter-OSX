@@ -20,6 +20,7 @@ class MeterMenuController: NSObject {
     
     var meterMenuItem: NSMenuItem!
     var preferencesWindow: PreferencesWindow!
+    var registeredForUpdates = false
     
     override func awakeFromNib() {
         statusItem.image = NSImage(named: "statusIcon")
@@ -72,7 +73,10 @@ class MeterMenuController: NSObject {
                 print("Remaining Peak data: \(usage.remainingPeakDataPercentage)%")
                 self.meterView.update(usage)
                 
-                self.registerForBackgroundUpdating()
+                if !self.registeredForUpdates {
+                    self.registeredForUpdates = true
+                    self.registerForBackgroundUpdating()
+                }
             }
         }
     }

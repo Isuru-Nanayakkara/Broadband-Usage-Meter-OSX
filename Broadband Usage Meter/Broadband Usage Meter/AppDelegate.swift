@@ -18,7 +18,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Insert code here to initialize your application
         
         // Move the app to the application folder to avoid users from running the app from disk
-        PFMoveToApplicationsFolderIfNecessary()
+//        PFMoveToApplicationsFolderIfNecessary()
         
         // Crashlytics setup
         Fabric.with([Crashlytics.self])

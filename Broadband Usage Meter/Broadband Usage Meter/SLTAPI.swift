@@ -25,7 +25,7 @@ class SLTAPI {
                     print("Something's fucky! - \(httpResponse)")
                     completion(error: error)
                 } else {
-                    let html = NSString(data: data!, encoding: NSUTF8StringEncoding) as! String
+                    let html = String(data: data!, encoding: NSUTF8StringEncoding)!
                     if html.containsString("Invalid Credentials") {
                         let errorDescription = "Invalid Credentails"
                         let recoverySuggestion = "Please enter the correct portal Username and Password"
