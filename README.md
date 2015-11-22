@@ -23,7 +23,7 @@ Little menu bar app that allows you to check your broadband data usage directly 
 
 ## Support
 
-Check out the [roadmap] for this project to see the upcoming features. If you have any more ideas/suggestions, please open an issue or let me know via [twitter](https://twitter.com/IJNanayakkara) or [email](mailto:isuru.nan@gmail.com).
+Check out the [roadmap](https://github.com/Isuru-Nanayakkara/Broadband-Usage-Meter-OSX/blob/master/ROADMAP.md) for this project to see the upcoming features. If you have any more ideas/suggestions, please open an issue or let me know via [twitter](https://twitter.com/IJNanayakkara) or [email](mailto:isuru.nan@gmail.com).
 
 ## Legal
 
